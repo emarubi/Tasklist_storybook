@@ -1,6 +1,7 @@
 import React from 'react';
 
-import TaskList from './TaskList';
+// import TaskList from './TaskList';
+import PureTaskList from './TaskList';
 import * as TaskStories from './Task.stories';
 
 // By importing TaskStories, we were able to compose the arguments (args for short) in our stories with minimal effort. 
@@ -8,7 +9,7 @@ import * as TaskStories from './Task.stories';
 
 // eslint-disable-next-line import/no-anonymous-default-export
 export default {
-    component: TaskList,
+    component: PureTaskList,
     title: 'TaskList',
     decorators: [story => <div style={{ padding: '3em'}} >{story()}</div>],
 };
@@ -16,7 +17,7 @@ export default {
 // In this case we’re using a decorator `key` on the default export to add some `padding` around the rendered component. 
 // They can also be used to wrap stories in “providers”.
 
-const Template = args => <TaskList {...args} />;
+const Template = args => <PureTaskList {...args} />;
 
 export const Default = Template.bind({});
 Default.args = {
