@@ -16,7 +16,7 @@ export default function Task({ task: { id, title, state }, onArchiveTask, onPinT
                 <span className="checkbox-custom" onlick={() => onArchiveTask(id)} />
             </label>
             <div className="title">
-                <input type="text" value={title} readOnly={true} placeholder="Insert title"/>
+                <input type="text" value={title} readOnly={true} placeholder="Insert title" style={{ textOverflow: 'ellipsis' }}/>
             </div>
             <div className="actions" onlick={event => event.stopPropagation()}>
                 {state !== 'TASK_ARCHIVED' && (
