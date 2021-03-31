@@ -1,19 +1,13 @@
 
-<p align="center">
-  <a href="https://www.chromatic.com/">
-    <img alt="Chromatic" src="https://avatars2.githubusercontent.com/u/24584319?s=200&v=4" width="60" />
-  </a>
-</p>
-
 <h1 align="center">
-  Chromatic's Intro to Storybook React template
+  Intro to Storybook React template
 </h1>
 
 This template ships with the main React and Storybook configuration files you'll need to get up and running fast.
 
 ## 🚅  Quick start
 
-1.  **Create the application.**
+1. **Create the application.**
 
     Use [degit](https://github.com/Rich-Harris/degit) to get this template.
 
@@ -22,7 +16,7 @@ This template ships with the main React and Storybook configuration files you'll
     npx degit chromaui/intro-storybook-react-template taskbox
     ```
 
-1.  **Install the dependencies.**
+1. **Install the dependencies.**
 
     Navigate into your new site’s directory and install the necessary dependencies.
 
@@ -34,11 +28,11 @@ This template ships with the main React and Storybook configuration files you'll
     yarn
     ```
 
-1.  **Open the source code and start editing!**
+1. **Open the source code and start editing!**
 
     Open the `taskbox` directory in your code editor of choice and building your first component!
 
-1.  **Browse your stories!**
+1. **Browse your stories!**
 
     Run `yarn storybook` to see your component's stories at `http://localhost:6006`
 
@@ -57,16 +51,15 @@ A quick look at the top-level files and directories included with this template.
     ├── yarn.lock
     └── README.md
 
+1. **`.storybook`**: This directory contains Storybook's [configuration](https://storybook.js.org/docs/react/configure/overview) files.
 
-1.  **`.storybook`**: This directory contains Storybook's [configuration](https://storybook.js.org/docs/react/configure/overview) files.
+2. **`node_modules`**: This directory contains all of the modules of code that your project depends on (npm packages).
 
-2.  **`node_modules`**: This directory contains all of the modules of code that your project depends on (npm packages).
+3. **`public`**: This directory will contain the development and production build of the site.
 
-3.  **`public`**: This directory will contain the development and production build of the site.
+4. **`src`**: This directory will contain all of the code related to what you will see on your application.
 
-4.  **`src`**: This directory will contain all of the code related to what you will see on your application.
-
-5.  **`.gitignore`**: This file tells git which files it should not track or maintain during the development process of your project.
+5. **`.gitignore`**: This file tells git which files it should not track or maintain during the development process of your project.
 
 6. **`LICENSE`**: The template is licensed under the MIT licence.
 
