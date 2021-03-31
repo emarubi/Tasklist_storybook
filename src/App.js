@@ -1,17 +1,18 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { Provider } from 'react-redux';
 import store from './lib/redux';
 
 
-import PureTaskList from './components/TaskList';
-class App extends Component {
-  render() {
+import InboxScreen from './components/InboxScreen';
+
+import './index.css';
+
+function App () {
     return (
       <Provider store={store}>
-        <PureTaskList />
+        <InboxScreen />
       </Provider>
     )
-  }
 }
 
 export default App;

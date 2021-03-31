@@ -1,7 +1,7 @@
 import React from 'react';
 
 // import TaskList from './TaskList';
-import PureTaskList from './TaskList';
+import { PureTaskList } from './TaskList';
 import * as TaskStories from './Task.stories';
 
 // By importing TaskStories, we were able to compose the arguments (args for short) in our stories with minimal effort. 
@@ -10,14 +10,15 @@ import * as TaskStories from './Task.stories';
 // eslint-disable-next-line import/no-anonymous-default-export
 export default {
     component: PureTaskList,
-    title: 'TaskList',
-    decorators: [story => <div style={{ padding: '3em'}} >{story()}</div>],
-};
+    title: "TaskList",
+    decorators: [(story) => <div style={{ padding: "3rem" }}>{story()}</div>],
+    parameters: { assets: ["designs/list-1.png", "designs/list-2.png"] },
+  };
 // Decorators are a way to provide arbitrary wrappers to stories. 
 // In this case we’re using a decorator `key` on the default export to add some `padding` around the rendered component. 
 // They can also be used to wrap stories in “providers”.
 
-const Template = args => <PureTaskList {...args} />;
+const Template = (args) => <PureTaskList {...args} />;
 
 export const Default = Template.bind({});
 Default.args = {
@@ -45,14 +46,14 @@ WithPinnedTasks.args = {
 
 export const Loading = Template.bind({});
 Loading.args = {
-    tasks: [],
-    loading: true,
+  tasks: [],
+  loading: true,
 };
 
 export const Empty = Template.bind({});
 Empty.args = {
-    // Shaping the stories through args composition.
-    // Inherited data coming from the Loading story.
-    ...Loading.args,
-    loading: false,
+  // Shaping the stories through args composition.
+  // Inherited data coming from the Loading story.
+  ...Loading.args,
+  loading: false,
 };
