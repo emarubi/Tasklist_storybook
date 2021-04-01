@@ -1,10 +1,11 @@
-import React from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 
-import TaskList from './TaskList';
+import TaskList from '../TaskList/TaskList';
+import Form from '../Form/Form';
 
 export function PureInboxScreen({ error }) {
+
   if (error) {
     return (
       <div className="page lists-show">
@@ -20,9 +21,10 @@ export function PureInboxScreen({ error }) {
   return (
     <div className="page lists-show">
       <nav>
-        <h1 className="title-page">
+        {/* <h1 className="title-page">
           <span className="title-wrapper">Taskbox</span>
-        </h1>
+        </h1> */}
+        <Form addTaskFromInput={console.warn} />
       </nav>
       <TaskList />
     </div>

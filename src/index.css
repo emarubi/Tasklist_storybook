@@ -982,14 +982,19 @@
  }
  .page.lists-show {
    min-height: 100vh;
+   width: 50vw;
    background: white;
+   margin: 0 auto;
  }
  .page.lists-show nav {
    background: #d3edf4;
    padding: 1.5rem 1.25rem;
    text-align: center;
  }
- @media screen and (min-width: 40em) {
+ @media screen and (max-width: 400px) {
+   .page.lists-show {
+    width: 100vw;
+   }
    .page.lists-show nav {
      text-align: left;
    }

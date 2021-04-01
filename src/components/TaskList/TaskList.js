@@ -1,10 +1,10 @@
 import React from 'react';
 import propTypes from 'prop-types';
 
-import Task from './Task';
+import Task from '../Task/Task';
 
 import { connect } from 'react-redux';
-import { archiveTask, pinTask } from '../lib/redux';
+import { archiveTask, pinTask } from '../../lib/redux';
 
 export function PureTaskList ({ loading, tasks, onPinTask, onArchiveTask }) {
 // export default function TaskList({ loading, tasks, onPinTask, onArchiveTask }) {

@@ -2,7 +2,7 @@ import React from 'react';
 
 // import TaskList from './TaskList';
 import { PureTaskList } from './TaskList';
-import * as TaskStories from './Task.stories';
+import * as TaskStories from '../Task/Task.stories';
 
 // By importing TaskStories, we were able to compose the arguments (args for short) in our stories with minimal effort. 
 // That way the data and actions (mocked callbacks) expected by both components is preserved.

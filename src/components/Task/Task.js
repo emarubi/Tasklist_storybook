@@ -1,7 +1,7 @@
 import React from 'react';
 import propTypes from 'prop-types';
 
-import '../index.css';
+// import '../index.css';
 
 export default function Task({ task: { id, title, state }, onArchiveTask, onPinTask}) {
     return (
